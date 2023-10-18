@@ -1,0 +1,71 @@
+---
+import Container from "../shared/Container.astro";
+import Title from "../shared/Title.astro";
+---
+
+<section id="portfolio">
+  <Container className="space-y-10 md:sapce-y-12">
+    <div class="text-center max-w-3xl mb-[100px] mx-auto">
+      <Title>Portfolio</Title>
+    </div>
+
+    <div class="w-full overflow-hidden relative bg-gradient-to-tr from-gray-100 to-gray-200 dark:from-gray-900">
+       <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+        <div class="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+            <span
+              class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+            ></span>
+            <span
+              class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+            ></span>
+            <span
+              class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+            ></span>
+          </div>
+      </div>
+
+      <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
+        <div class="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+            <span
+              class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"
+            ></span>
+            <span
+              class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"
+            ></span>
+            <span
+              class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"
+            ></span>
+          </div>
+      </div>
+      <div class="flex overflow-hidden ">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697486015/PortfolioWebWizard/Desing-removebg-preview_xz6mxj.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485934/PortfolioWebWizard/Moda-removebg-preview_zfuqpn.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485933/PortfolioWebWizard/Dash_1-removebg-preview_ybeqkg.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485932/PortfolioWebWizard/Sport-removebg-preview_kf9azl.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485931/PortfolioWebWizard/Nails-removebg-preview_dgtbjb.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485933/PortfolioWebWizard/Dash_2-removebg-preview_x6bz0r.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485929/PortfolioWebWizard/Resto-removebg-preview_i3lbpc.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485929/PortfolioWebWizard/Glass-removebg-preview_idxayy.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485930/PortfolioWebWizard/FlayWay-removebg-preview_fmaldf.png" alt="">
+        <img class="w-screen h-600 object-cover animate-carousel" src="https://res.cloudinary.com/dxsosgojl/image/upload/v1697485928/PortfolioWebWizard/Mobiliario-removebg-preview_qkm99j.png" alt="">
+      </div>
+    </div>
+    
+  </Container>
+</section>
+<style>
+  @keyframes auto-scroll {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-200%); }
+  40% { transform: translateX(-400%); }
+  60% { transform: translateX(-600%); }
+  80% { transform: translateX(-750%); }
+  
+ 
+}
+
+.animate-carousel {
+  animation: auto-scroll 50s linear infinite; /* Ajusta la duración y el tiempo aquí */
+}
+
+</style>

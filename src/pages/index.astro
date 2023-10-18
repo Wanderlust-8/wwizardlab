@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Services from '../components/sections/Services.astro';
+import AboutUs from '../components/sections/AboutUs.astro';
+import Features from '../components/sections/Features.astro';
+import CTA from '../components/sections/CTA.astro';
+import Brands from '../components/sections/Brands.astro';
+import Portfolio from '../components/sections/Portfolio.astro';
+import Plan from '../components/sections/Plan.astro';
+import Portfolio2 from '../components/sections/Portfolio2.astro';
+---
+
+<Layout title="Welcome to AgenceX">
+	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<Hero/>
+		<!-- <Brands/> -->
+		<Services/>
+		<Features/>
+		<AboutUs/>
+		<Portfolio />
+		<Portfolio2 />
+		<Plan/>
+		<CTA/>
+	</main>
+</Layout>
